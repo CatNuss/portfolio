@@ -1,0 +1,84 @@
+.nav_svg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 8888;
+}
+
+.contact {
+    position: absolute;
+    z-index: 8889;
+    max-width: 400px;
+    height: auto;
+    -webkit-animation: rotating 20s linear infinite;
+    -moz-animation: rotating 20s linear infinite;
+    -ms-animation: rotating 20s linear infinite;
+    -o-animation: rotating 20s linear infinite;
+    animation: rotating 20s linear infinite;
+}
+
+#contacticon {
+    max-width: 100px;
+    height: auto;
+    -webkit-filter: drop-shadow(0px 5px 20px rgba(255,255,255,0.5));
+}
+
+.contact:hover {
+    cursor: pointer;
+}
+
+
+.film_svg:hover, .about_svg:hover, .web_svg:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+}
+
+
+.film_svg, .about_svg, .web_svg { 
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    filter: url(#shadow);
+}
+
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
