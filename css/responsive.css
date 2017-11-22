@@ -1,19 +1,259 @@
 
-@media screen and (max-width: 64rem){
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
   .col{
     width: calc(33.333333% - 2rem);
   }
 }
 
-@media screen and (max-width: 48rem){
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .tabnav {
+        display: block;
+    } 
+    
+    .nav_svg {
+        display: none!important;
+    }
+    
+    #history_img {
+        height: 40vh;
+        width: 100vw;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    
+    .about_text {
+        padding-top: 100px;
+        width: 100vw;
+        height: auto;
+        display: inline-flex; 
+        justify-content: center;
+        overflow-y: scroll;
+}
+    .about_text.history {
+        display: inline;
+    }
+    
+    #history_txt {
+        width: auto;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+    
+    #future_txt {
+        width: 50vw;
+    }
+    
+     
+    #contact_section {
+        display: block;
+        overflow-y: scroll;
+    }
+    
+
+    #contact_form_section {
+        width: auto;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        height: 50vh;
+    }
+    
+    #contact_info_section {
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 80vh;
+}
+    
+    .email, .phone {
+        text-align: right;
+        padding: 10px;
+        height: auto;
+        font-size: 0.8em;
+        width: 50%;
+        float: left;
+    }
+    
+    .info_container {
+        height: 70vh;
+    }
+    
+    .info{
+        font-size: 1.5em;
+    }
+
+    #phoneiconmob {
+        display: block;
+    }
+    
+    #emailiconmob {
+        display: block;
+    }
+    
+    #phonenumbertxt {
+        display: none;
+    }
+    
+    #emailtxt {
+        display: none;
+    }
+    
+    #contactlogo {
+        height: 60%;
+    }
+    
+    .cd-svg-clipped-slider .gallery-wrapper, .cd-svg-clipped-slider .gallery, .cd-svg-clipped-slider .caption {
+    padding-top: 8vh;
+}
+    
   .col{
-    width: calc(50% - 2rem);
+    width: calc(32% - 2rem);
   }
 }
 
-@media screen and (max-width: 32rem){
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body {
+        overflow-y: scroll;
+    }
+    
+    .mobilenav {
+        display: inherit;
+    }
+    
+    .nav_svg {
+        display: none;
+    }
+    
+    .contactcontain {
+        display: none;
+    }
+    
+    #logo-wrap {
+        align-items: flex-start;
+    }
+    
+/*    /NAV*/
+    
+    .cd-svg-clipped-slider .caption li.selected {
+        width: 80%;
+    }
+    
+    .video_describe_head, .video_describe_body {
+        padding: 0px;
+    }
+    
+    .wrapper {
+        display: none;
+    }
+    
+    .cd-svg-clipped-slider .gallery-wrapper,
+    .cd-svg-clipped-slider .gallery,
+    .cd-svg-clipped-slider .caption {
+        padding-top: 10%;
+    }
+    
+    .cd-svg-clipped-slider .navigation a {
+        top: 56%;
+    }
+/*    /Gallery*/
+    
+    #history_img {
+        height: 40vh;
+        width: 80%;
+        margin-left: 30px;
+        margin-bottom: 30px;
+}
+    .about_text {
+        padding-top: 100px;
+        width: 100vw;
+        height: auto;
+        display: inline; 
+        justify-content: center;
+        overflow-y: scroll;
+}
+    #history_txt, #future_txt {
+        width: auto;
+    }
+    
+    .myskills {
+        display: none;
+    }
+
+/*    contact*/
+    
+    #contact_section {
+        display: block;
+        overflow-y: scroll;
+    }
+    
+
+    #contact_form_section {
+        width: auto;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    #contact_info_section {
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 80vh;
+}
+    
+    #phoneiconmob {
+        display: block;
+    }
+    
+    #emailiconmob {
+        display: block;
+    }
+    
+    #phonenumbertxt {
+        display: none;
+    }
+    
+    #emailtxt {
+        display: none;
+    }
+    
+    #contactlogo {
+        height: 40%;
+    }
+    
+    .film_container {
+        overflow-y: scroll;
+    }
+    
+    .backbutt_contain {
+        background-color: #000;
+        height: 15%;
+
+    }
+    
+    #mobileimage {
+        display: inline;
+    }
   .col{
     width: 100%;
     margin: 0 0 2rem 0;
   }
+    
 }
+

@@ -1,12 +1,6 @@
 
 /*======WEB*/
 
-.backbutt_web {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-}
-
 .gallery_container {
     width: 100%; 
     height: 100%;
@@ -25,9 +19,6 @@
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
-  box-sizing: border-box;
-}
 
 html {
   font-size: 62.5%;

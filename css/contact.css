@@ -52,6 +52,8 @@ form {
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 3px;
     font-weight: 100;
+    display: flex;
+    justify-content: center;
 }
 
 .info, .email, .phone {
@@ -109,5 +111,13 @@ input[type=submit]:hover {
 .backbutt_contact {
     position: fixed;
     right: 0;
+}
+
+#phoneiconmob {
+    display: none;
+}
+
+#emailiconmob {
+    display: none;
 }
 

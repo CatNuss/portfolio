@@ -34,6 +34,22 @@ html, body {
     z-index: 10;
 }
 
+.mobilenav {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 8888;
+}
+
+.tabnav {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 8888;
+}
+
 #logo-wrap {
     width: 100%;
     height: 100%;
@@ -43,7 +59,7 @@ html, body {
 }
 
 #logo_img {
-    height: 30%;
+    height: 30vh;
     width: auto;
 }
 
@@ -109,7 +125,7 @@ html, body {
     bottom: 0;
     background-color: #fff;
     /* change if the mask should have another color then white */
-    z-index: 9999;
+    z-index: 999999;
     /* makes sure it stays on top */
 }
 
@@ -129,10 +145,29 @@ html, body {
   /* is width and height divided by two */
 }
 
-.contactcontain {
-    width: 100vh;
-    height: 100vh;
-    overflow: hidden;
+.footercontain {
+    position: fixed;
+    z-index: 99999;
+    height: 5vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
 }
+
+.footer {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footertxt {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
 
 

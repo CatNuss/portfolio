@@ -22,22 +22,26 @@ function makeNewPosition(){
     
 }
 
-function animateDiv(myclass){
+function animateDiv(contact){
     var newq = makeNewPosition();
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 20000,   function(){
-      animateDiv(myclass);        
+    $(contact).animate({ top: newq[0], left: newq[1] }, 20000,   function(){
+      animateDiv(contact);        
     });
     
 };
 
 $(document).ready(function(){
-    //video gallery
     
       $(".modal-box-base").hide();
     
         $(".contact").click(function(){
             $(".modal-contact").slideDown("slow", "linear");
         });
+    
+        $("#contact").click(function(){
+            $(".modal-contact").slideDown("slow", "linear");
+        });
+        
         
         $(".backbutt_contact").click(function(){
             $(".modal-contact").slideUp("slow", "linear");
@@ -48,6 +52,15 @@ $(document).ready(function(){
         $("#film").click(function(){
             $(".modal-film").slideDown("slow", "linear");
         });
+    
+        $(".film").click(function(){
+            $(".modal-film").slideDown("slow", "linear");
+        });
+    
+        $("#filmtab").click(function(){
+            $(".modal-film").slideDown("slow", "linear");
+        });
+        
         
         $(".backbutt_film").click(function(){
             $(".modal-film").slideUp("slow", "linear");
@@ -57,13 +70,29 @@ $(document).ready(function(){
         $("#web").click(function(){
             $(".modal-web").slideDown("slow", "linear");
         });
-        
+    
+        $(".web").click(function(){
+            $(".modal-web").slideDown("slow", "linear");
+        });
+
+        $("#webtab").click(function(){
+            $(".modal-web").slideDown("slow", "linear");
+        });
+    
         $(".backbutt_web").click(function(){
             $(".modal-web").slideUp("slow", "linear");
         });
 //web modal show/hide
     
         $("#about").click(function(){
+            $(".modal-about").slideDown("slow", "linear");
+        });
+
+        $("#abouttab").click(function(){
+            $(".modal-about").slideDown("slow", "linear");
+        });
+    
+        $(".about").click(function(){
             $(".modal-about").slideDown("slow", "linear");
         });
         
@@ -77,8 +106,6 @@ $(document).ready(function(){
             $(".modal-about").slideUp("slow", "linear");
             $(".modal-contact").delay(800).slideDown("slow", "linear");
         });
-
-    
     
 
     loop();
@@ -218,8 +245,10 @@ $(document).ready(function(){
 //film
     
      $('.nextvid').click(function() {
+        $('.currentvid').fadeOut("slow", "linear"); 
         $('.currentvid').removeClass('currentvid').hide()
             .next("#video").show().addClass('currentvid');
+        $('.currentvid').fadeIn("slow", "linear");         
         if ($('.currentvid').hasClass('last')) {
             $('.nextvid').attr('disabled', true);
         }
@@ -235,12 +264,12 @@ $(document).ready(function(){
         $('.nextvid').attr('disabled', null);
     });
     
-    $('.nextvid').click(function(){
-       $('.currentvid').fadeOut("slow", "linear"); 
-    });
-    
-    $('.prevvid').click(function(){
-       $('.currentvid').fadeIn("slow", "linear"); 
-    });
+//    $('.nextvid').click(function(){
+//       $('.currentvid').fadeOut("slow", "linear"); 
+//    });
+//    
+//    $('.prevvid').click(function(){
+//       $('.currentvid').fadeIn("slow", "linear"); 
+//    });
     
 });
